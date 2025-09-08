@@ -1,0 +1,111 @@
+/* ---------- Base ---------- */
+:root{
+  --bg:#ffffff;
+  --text:#111418;
+  --muted:#6b7280;
+  --brand:#1e90ff;
+  --card:#f5f7fb;
+}
+
+*{ box-sizing:border-box; }
+html,body{ margin:0; padding:0; }
+body{
+  font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+  color:var(--text);
+  background:var(--bg);
+}
+
+/* ---------- Layout helpers ---------- */
+.container{
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/* ---------- Header ---------- */
+.site-header{
+  background:#0f172a;
+  color:#fff;
+}
+.site-header .container{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:16px;
+  padding:14px 16px;
+}
+.site-header h1{
+  font-size:20px;
+  margin:0;
+  letter-spacing:.5px;
+}
+.site-header nav a{
+  color:#cbd5e1;
+  text-decoration:none;
+  margin-left:18px;
+  font-weight:600;
+}
+.site-header nav a:hover{ color:#fff; }
+
+/* ---------- Article ---------- */
+.article{ padding: 28px 0 48px; }
+.breadcrumbs{
+  color:var(--muted);
+  font-size:14px;
+  margin:0 0 10px;
+}
+h2{
+  font-size: 34px;
+  line-height:1.2;
+  margin: 6px 0 6px;
+}
+.dek{
+  color:var(--muted);
+  font-size:20px;
+  margin: 0 0 18px;
+}
+
+/* ---------- Hero image ---------- */
+.hero{
+  margin: 18px 0 22px;
+  background:var(--card);
+  border:1px solid #e5e7eb;
+  border-radius:10px;
+  overflow:hidden;
+}
+.hero img{
+  width:100%;
+  display:block;
+  /* যদি এখন ছবি না থাকে, তখনও জায়গা ধরে রাখবে */
+  aspect-ratio: 16/9;
+  object-fit:cover;
+  background:#e5e7eb;
+}
+.hero figcaption{
+  font-size:13px;
+  color:var(--muted);
+  padding:8px 12px;
+}
+
+/* ---------- Body content ---------- */
+article h3{
+  margin:22px 0 8px;
+  font-size:22px;
+}
+ol, ul{
+  padding-left: 22px;
+}
+li{ margin: 4px 0; }
+
+/* ---------- Footer ---------- */
+.site-footer{
+  border-top:1px solid #e5e7eb;
+  background:#fafafa;
+  margin-top:36px;
+}
+.site-footer .container{
+  padding:16px;
+  color:var(--muted);
+  font-size:14px;
+  text-align:center;
+}
